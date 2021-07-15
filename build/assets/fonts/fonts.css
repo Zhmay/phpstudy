@@ -1,0 +1,32 @@
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('assets/fonts/lato/regular/Lato-Regular.eot');
+    src: url('assets/fonts/lato/regular/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/regular/Lato-Regular.woff') format('woff'), url('assets/fonts/lato/regular/Lato-Regular.ttf') format('truetype'), url('assets/fonts/lato/regular/Lato-Regular.svg#Lato') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('assets/fonts/lato/bold/Lato-Bold.eot');
+    src: url('assets/fonts/lato/bold/Lato-Bold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/bold/Lato-Bold.woff') format('woff'), url('assets/fonts/lato/bold/Lato-Bold.ttf') format('truetype'), url('assets/fonts/lato/bold/Lato-Bold.svg#Lato') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('assets/fonts/lato/black/Lato-Black.eot');
+    src: url('assets/fonts/lato/black/Lato-Black.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/black/Lato-Black.woff') format('woff'), url('assets/fonts/lato/black/Lato-Black.ttf') format('truetype'), url('assets/fonts/lato/black/Lato-Black.svg#Lato') format('svg');
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Article</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/foundation.css?rel=38970">
+    <link rel="stylesheet" href="assets/css/app.css?rel=38970"><!--[if lt IE 10]>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <style>@font-face
+{
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('assets/fonts/lato/regular/Lato-Regular.eot');
+    src: url('assets/fonts/lato/regular/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/regular/Lato-Regular.woff') format('woff'), url('assets/fonts/lato/regular/Lato-Regular.ttf') format('truetype'), url('assets/fonts/lato/regular/Lato-Regular.svg#Lato') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('assets/fonts/lato/bold/Lato-Bold.eot');
+    src: url('assets/fonts/lato/bold/Lato-Bold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/bold/Lato-Bold.woff') format('woff'), url('assets/fonts/lato/bold/Lato-Bold.ttf') format('truetype'), url('assets/fonts/lato/bold/Lato-Bold.svg#Lato') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('assets/fonts/lato/black/Lato-Black.eot');
+    src: url('assets/fonts/lato/black/Lato-Black.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/black/Lato-Black.woff') format('woff'), url('assets/fonts/lato/black/Lato-Black.ttf') format('truetype'), url('assets/fonts/lato/black/Lato-Black.svg#Lato') format('svg');
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="preloader" data-controller="preloader">
+      <div class="preloader-wrapper">
+        <div class="preloader-center">
+          <div class="tcon-loader--spinner360" aria-label="loading">
+            <div class="tcon-visuallyhidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header class="header" data-controller="header">
+        <div class="header__holder"><a class="header__logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="47" height="50" viewBox="0 0 47 50"><g><g><g><path fill="#ffb900" d="M10.86 0c.142-.008.284 0 .424.021l31.17 4.745a2.143 2.143 0 0 1 1.784 2.442l-6.106 40.965a2.127 2.127 0 0 1-2.416 1.803L4.546 45.23a2.143 2.143 0 0 1-1.783-2.441L8.869 1.824A2.131 2.131 0 0 1 10.86 0zm4.2 2.585c-.378.01-.722.223-.903.559l-3.929 7.304a.538.538 0 0 0 .386.786l.734.114a.529.529 0 0 0 .545-.276l.839-1.56 2.903.444.35 1.74c.044.22.219.39.439.424l.733.11a.537.537 0 0 0 .6-.637l-1.625-8.15a1.064 1.064 0 0 0-1.072-.858zM29.738 37.76a.536.536 0 0 0-.494.642l1.627 8.15c.063.312.259.58.536.732.515.282 1.16.089 1.439-.432l3.929-7.302a.54.54 0 0 0-.386-.788l-.734-.111a.53.53 0 0 0-.545.273l-.839 1.56-2.903-.441-.35-1.74a.534.534 0 0 0-.44-.425l-.734-.113a.533.533 0 0 0-.106-.004zm2.759 6.023a.213.213 0 0 1-.146.109.213.213 0 0 1-.25-.169l-.412-2.06 1.8.274-.995 1.846zM14.504 6.214a.214.214 0 0 1 .146-.11.213.213 0 0 1 .25.17l.412 2.06-1.8-.274.994-1.846zm12.714 24.001l-2.296-.418 1.18-6.449-4.762-.866-1.18 6.449-2.297-.419c-.684-.124-.982.27-.662.878l1.107 2.109 1.161 2.208 1.108 2.11c.319.607 1 .731 1.515.275l1.783-1.583 1.867-1.657 1.784-1.583c.515-.455.376-.93-.308-1.054zm3.983-9.241c-.162-.03-.325-.048-.486-.065-.557-3.11-3.022-5.71-6.37-6.32-4.288-.78-8.388 1.997-9.156 6.199-.002.007-.001.013-.002.02-2.664-.282-5.128 1.489-5.61 4.116-.503 2.755 1.367 5.405 4.178 5.917l3.1.564-.765-1.457c-.38-.724-.358-1.456.06-2.008.416-.552 1.122-.785 1.935-.637l1.064.194 1.18-6.447 7.225 1.315-1.18 6.449 1.064.193c.813.149 1.391.614 1.586 1.278.194.666-.044 1.356-.655 1.898l-1.233 1.095 1.754.319c3.555.647 6.954-1.654 7.592-5.14.638-3.486-1.727-6.836-5.281-7.483z"/></g><g><path fill="#fff" d="M5.024 3.677L7.6 3.355 4.99 20.87 3.177 6.07a2.141 2.141 0 0 1 1.847-2.393zM39.4 46.643l2.61-17.515 1.813 14.8a2.141 2.141 0 0 1-1.847 2.393z"/></g><g><path fill="#ffb900" d="M.105 10.715a2.147 2.147 0 0 1 1.362-2.699l.878-.287 1.97 16.092-4.21-13.106zm46.79 28.568a2.147 2.147 0 0 1-1.362 2.699l-.877.287-1.97-16.092z"/></g></g></g></svg>
+            <div class="header__logo-txt"><span>ace</span><span>downloader</span></div></a>
+          <div class="header__btn js-header-btn">
+            <div class="line"></div>
+          </div>
+          <div class="header__menu js-header-menu">
+            <div class="header__social">
+              <div class="social  social--header">
+                <div class="social__item"><a href="#">
+                    <svg class="icon-svg  icon-twitter">
+                      <use xlink:href="assets/img/sprite.svg#twitter"></use>
+                    </svg></a></div>
+                <div class="social__item"><a href="#">
+                    <svg class="icon-svg  icon-fb">
+                      <use xlink:href="assets/img/sprite.svg#fb"></use>
+                    </svg></a></div>
+                <div class="social__item"><a href="#">
+                    <svg class="icon-svg  icon-insta">
+                      <use xlink:href="assets/img/sprite.svg#insta"></use>
+                    </svg></a></div>
+                <div class="social__item"><a href="#">
+                    <svg class="icon-svg  icon-youtube">
+                      <use xlink:href="assets/img/sprite.svg#youtube"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <ul class="header__nav">
+              <li class="header__nav-item"><a class="active" href="#"> <span>Home</span></a></li>
+              <li class="header__nav-item"><a href="#"> <span>Blog</span></a></li>
+              <li class="header__nav-item"><a href="#"> <span>Tos</span></a></li>
+              <li class="header__nav-item"><a href="#"> <span>Contact</span></a></li>
+            </ul>
+            <div class="header__lang js-lang">
+              <div class="header__lang-btn js-lang-btn"><img src="assets/img/flag/flag-01.png" alt="flag"/></div>
+              <div class="header__lang-drop js-lang-drop"><a class="header__lang-item" href="#"><img src="assets/img/flag/flag-02.png" alt="flag"/></a><a class="header__lang-item" href="#"><img src="assets/img/flag/flag-03.png" alt="flag"/></a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="social">
+          <div class="social__item"><a href="#">
+              <svg class="icon-svg  icon-twitter">
+                <use xlink:href="assets/img/sprite.svg#twitter"></use>
+              </svg></a></div>
+          <div class="social__item"><a href="#">
+              <svg class="icon-svg  icon-fb">
+                <use xlink:href="assets/img/sprite.svg#fb"></use>
+              </svg></a></div>
+          <div class="social__item"><a href="#">
+              <svg class="icon-svg  icon-insta">
+                <use xlink:href="assets/img/sprite.svg#insta"></use>
+              </svg></a></div>
+          <div class="social__item"><a href="#">
+              <svg class="icon-svg  icon-youtube">
+                <use xlink:href="assets/img/sprite.svg#youtube"></use>
+              </svg></a></div>
+        </div>
+        <div class="article">
+          <div class="container">
+            <div class="article__wrap">
+              <section class="article__content">
+                <div class="article__content-holder">
+                  <div class="article__content-category">Uncategorized</div>
+                  <div class="article__content-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/article/article-img.jpg" alt=""/>
+                  </div>
+                  <div class="article__content-info">
+                    <div class="article__content-info-item">
+                      <div class="article__content-info-icon">
+                        <svg class="icon-svg  icon-calendar">
+                          <use xlink:href="assets/img/sprite.svg#calendar"></use>
+                        </svg>
+                      </div><span>June 25, 2020</span>
+                    </div>
+                    <div class="article__content-info-item">
+                      <div class="article__content-info-icon">
+                        <svg class="icon-svg  icon-mess">
+                          <use xlink:href="assets/img/sprite.svg#mess"></use>
+                        </svg>
+                      </div><span>587</span>
+                    </div>
+                  </div>
+                  <div class="article__content-title">Top 10 Free Download and Streaming Sites</div>
+                  <div class="article__content-descr">
+                    <p>e love movies and we love them even more if they are free. Right? If you open your web browser and type free movie download websites, you’ll be presented with a long list of illegal websites promising to grab your favorite blockbuster in a matter of seconds.</p>
+                    <p>We are here with a list of some free movie download websites where you can get some quality entertainment without paying any money. This list includes the likes of The Internet Archive, Kanopy, Hotstar, Pluto TV, Public Domain Torrents, Retrovision, etc.</p>
+                    <p>There are many legal sources that provide free movies and TV shows; you can check out our list of sites for <a href="#">free and legal music</a> and <a href="#">free sports streaming</a> as well. Earlier, social media content creators believed in tracking when their audience login to a specific platform or the best time when users seek new information. However, with the changing environment, it has now become equally essential to focus on the user’s patterns and behavior.</p>
+                    <p>In other words, now, you also need to learn how they choose to use various social media channels and what they desire out of your content. For instance, an e-commerce brand may see a spike in their audience during shopping sales and engagements, while a corporate company may observe several clicks and new readership at the beginning of the day when people are looking for inspiration and news.</p>
+                  </div>
+                  <div class="article__table-outer">
+                    <div class="article__table-wrap">
+                      <table class="article__table">
+                        <thead>
+                          <tr>
+                            <th> <span>#</span></th>
+                            <th> Legal Movie Site Name</th>
+                            <th> Website URL</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="article__table-num">1</div>
+                            </td>
+                            <td>
+                              <div class="article__table-title">YouTube</div>
+                            </td>
+                            <td><a class="article__table-link" href="#">https://www.youtube.com/movies</a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="article__table-num">2</div>
+                            </td>
+                            <td>
+                              <div class="article__table-title">The Internet Archive</div>
+                            </td>
+                            <td><a class="article__table-link" href="#">https://archive.org/details/feature_films</a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="article__table-num">3</div>
+                            </td>
+                            <td>
+                              <div class="article__table-title">Hotstar</div>
+                            </td>
+                            <td><a class="article__table-link" href="#">https://www.hotstar.com/movies</a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="article__table-num">4</div>
+                            </td>
+                            <td>
+                              <div class="article__table-title">Retrovision</div>
+                            </td>
+                            <td><a class="article__table-link" href="#">https://retrovision.tv/</a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="article__table-num">5</div>
+                            </td>
+                            <td>
+                              <div class="article__table-title">Netflix Trial</div>
+                            </td>
+                            <td><a class="article__table-link" href="#">https://help.netflix.com/en/node/16282</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="article__ctrl">
+                    <div class="article__ctrl-left"><span>Share Article:</span>
+                      <div class="social  social--mod">
+                        <div class="social__item"><a href="#">
+                            <svg class="icon-svg  icon-twitter">
+                              <use xlink:href="assets/img/sprite.svg#twitter"></use>
+                            </svg></a></div>
+                        <div class="social__item"><a href="#">
+                            <svg class="icon-svg  icon-fb">
+                              <use xlink:href="assets/img/sprite.svg#fb"></use>
+                            </svg></a></div>
+                        <div class="social__item"><a href="#">
+                            <svg class="icon-svg  icon-insta">
+                              <use xlink:href="assets/img/sprite.svg#insta"></use>
+                            </svg></a></div>
+                        <div class="social__item"><a href="#">
+                            <svg class="icon-svg  icon-youtube">
+                              <use xlink:href="assets/img/sprite.svg#youtube"></use>
+                            </svg></a></div>
+                      </div>
+                    </div>
+                    <div class="article__ctrl-right">
+                      <div class="article__ctrl-box">
+                        <form class="input-box  input-box--mod" action="#">
+                          <input type="text" placeholder="https://acedownloader.com/blog/top-10-free-download..."/>
+                          <button type="submit">
+                            <svg class="icon-svg  icon-copy">
+                              <use xlink:href="assets/img/sprite.svg#copy"></use>
+                            </svg>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article__descr">
+                    <div class="article__descr-head">
+                      <div class="article__descr-img"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/article/article-user.png" alt=""/>
+                      </div>
+                      <div class="article__descr-name">Ragnar Lodbrock</div>
+                    </div>
+                    <div class="article__descr-txt">
+                      <p>Welcome to my SEO Community. My name is raman and i am co-owner of kwebby.com, Here you will find latest tricks and tips of SEO, Free tools etc. I love to share my knowledge as the internet is meant for sharing. Letme know if you have any queries i will love to resolve that.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form">
+                  <div class="form__head"><span>Leave a Reply</span></div>
+                  <form action="#">
+                    <div class="form__box">
+                      <div class="form__box-title">Name:</div>
+                      <input type="text" placeholder="barmaley107"/>
+                    </div>
+                    <div class="form__box">
+                      <div class="form__box-title">E-mail:</div>
+                      <input type="email" placeholder="ragnarlodbrock@gmail.com"/>
+                    </div>
+                    <div class="form__box">
+                      <div class="form__box-title">Comment:</div>
+                      <textarea name="comment" placeholder="Leave a message"></textarea>
+                    </div>
+                    <div class="form__box">
+                      <div class="form__box-title">Website:</div>
+                      <input type="text"/>
+                    </div>
+                    <div class="form__accept">
+                      <label class="checkbox">
+                        <input type="checkbox" name="accept"/><span>Save my name, email, and website in this browser for the next time I comment.</span>
+                      </label>
+                    </div>
+                    <button class="form__btn" type="submit">Post Comment</button>
+                  </form>
+                </div>
+              </section>
+              <aside class="article__sidebar">
+                <div class="article__sidebar-item">
+                  <div class="article__sidebar-item-head"><span>Tag Cloud</span></div>
+                  <div class="article__sidebar-item-content">
+                    <div class="article__sidebar-tag"><a class="article__sidebar-tag-item" href="#"><span>films</span></a><a class="article__sidebar-tag-item" href="#"><span>movie</span></a><a class="article__sidebar-tag-item" href="#"><span>cinema</span></a><a class="article__sidebar-tag-item" href="#"><span>filmmaking</span></a><a class="article__sidebar-tag-item" href="#"><span>photography</span></a><a class="article__sidebar-tag-item" href="#"><span>Art</span></a></div>
+                  </div>
+                </div>
+                <div class="article__sidebar-item">
+                  <div class="article__sidebar-item-head"><span>Categories</span></div>
+                  <div class="article__sidebar-item-content" data-controller="custom-scroll">
+                    <ul class="article__categories custom-scroll js-custom-scroll">
+                      <li><a href="#"><span>Acting</span><span>1</span></a></li>
+                      <li><a href="#"><span>Cinema</span><span>54</span></a></li>
+                      <li><a href="#"><span>Artist</span><span>221</span></a></li>
+                      <li><a href="#"><span>Analog</span><span>548</span></a></li>
+                      <li><a href="#"><span>Music</span><span>692</span></a></li>
+                      <li><a href="#"><span>Actress</span><span>213</span></a></li>
+                      <li><a href="#"><span>Director</span><span>871</span></a></li>
+                      <li><a href="#"><span>TV</span><span>10</span></a></li>
+                      <li><a href="#"><span>Film Community</span><span>887</span></a></li>
+                      <li><a href="#"><span>Film Community</span><span>887</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="article__sidebar-item">
+                  <div class="article__sidebar-item-head"><span>Advertising</span></div>
+                  <div class="article__sidebar-item-content">
+                    <div class="article__sidebar-img"><img src="assets/img/article/article-board.jpg" alt="board"/></div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrap">
+          <div class="footer__inner"><a class="footer__logo" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="47" height="50" viewBox="0 0 47 50"><g><g><path fill="#333c40" d="M11 1L5 43l32 6 7-43z"/></g><g><path fill="#ffb900" d="M10.86 0c.142-.008.284 0 .424.021l31.17 4.745a2.143 2.143 0 0 1 1.784 2.442l-6.106 40.965a2.127 2.127 0 0 1-2.416 1.803L4.546 45.23a2.143 2.143 0 0 1-1.783-2.441L8.869 1.824A2.131 2.131 0 0 1 10.86 0zm4.2 2.585c-.378.01-.722.223-.903.559l-3.929 7.304a.537.537 0 0 0 .386.786l.734.114a.53.53 0 0 0 .545-.275l.839-1.56 2.903.443.35 1.74c.044.22.219.39.439.424l.733.11a.537.537 0 0 0 .6-.637l-1.625-8.15a1.065 1.065 0 0 0-1.072-.858zM29.738 37.76a.536.536 0 0 0-.494.642l1.627 8.15c.063.313.259.58.536.732.515.282 1.16.089 1.439-.433l3.929-7.302a.54.54 0 0 0-.386-.787l-.734-.111a.53.53 0 0 0-.545.273l-.839 1.56-2.903-.441-.35-1.74a.533.533 0 0 0-.44-.425l-.734-.113a.535.535 0 0 0-.106-.004zm2.759 6.023a.213.213 0 0 1-.395-.06l-.413-2.06 1.8.274-.995 1.846zM14.504 6.214a.212.212 0 0 1 .395.06l.413 2.06-1.8-.274.994-1.846zm12.714 24l-2.296-.417 1.18-6.449-4.762-.866-1.18 6.448-2.297-.418c-.684-.124-.982.27-.662.878l1.107 2.109 1.161 2.208 1.108 2.11c.319.607 1 .731 1.515.276l1.783-1.584 1.867-1.657 1.784-1.583c.515-.455.376-.93-.308-1.054zm3.983-9.24c-.162-.03-.325-.048-.486-.065-.557-3.11-3.022-5.71-6.37-6.32-4.288-.78-8.388 1.997-9.156 6.199-.002.008-.001.013-.002.02-2.664-.282-5.128 1.489-5.61 4.116-.503 2.755 1.367 5.406 4.178 5.917l3.1.564-.765-1.457c-.38-.724-.358-1.456.06-2.008.416-.552 1.122-.785 1.935-.637l1.064.194 1.18-6.447 7.225 1.315-1.18 6.449 1.064.193c.813.149 1.391.614 1.586 1.278.194.666-.044 1.356-.655 1.898l-1.233 1.094 1.754.32c3.555.646 6.954-1.654 7.592-5.14.638-3.486-1.727-6.836-5.281-7.483z"/></g><g><path fill="#333c40" d="M5.024 3.677L7.6 3.355 4.99 20.87 3.177 6.07a2.141 2.141 0 0 1 1.847-2.393zM39.4 46.643l2.61-17.515 1.813 14.8a2.141 2.141 0 0 1-1.847 2.393z"/></g><g><path fill="#ffb900" d="M.105 10.715a2.147 2.147 0 0 1 1.362-2.699l.878-.287 1.97 16.092-4.21-13.106zm46.79 28.568a2.147 2.147 0 0 1-1.362 2.699l-.877.287-1.97-16.092z"/></g></g></svg>
+              <div class="footer__logo-txt"><span>ace</span><span>downloader</span></div></a></div>
+          <div class="footer__inner">
+            <div class="footer__social">
+              <div class="footer__social-item"><a href="#">
+                  <svg class="icon-svg  icon-twitter">
+                    <use xlink:href="assets/img/sprite.svg#twitter"></use>
+                  </svg></a></div>
+              <div class="footer__social-item"><a href="#">
+                  <svg class="icon-svg  icon-fb">
+                    <use xlink:href="assets/img/sprite.svg#fb"></use>
+                  </svg></a></div>
+              <div class="footer__social-item"><a href="#">
+                  <svg class="icon-svg  icon-insta">
+                    <use xlink:href="assets/img/sprite.svg#insta"></use>
+                  </svg></a></div>
+              <div class="footer__social-item"><a href="#">
+                  <svg class="icon-svg  icon-youtube">
+                    <use xlink:href="assets/img/sprite.svg#youtube"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="footer__inner footer__inner--right">
+            <div class="footer__copy"> &#169;2020 Ace Video Downloader - All In One Downloader</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/foundation.js?rel=38970" defer></script>
+    <script src="assets/js/app.js?rel=38970" defer></script>
+  </body>
+</html>
