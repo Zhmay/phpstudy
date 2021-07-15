@@ -1,66 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Template page</title>
-    <meta content="" name="author">
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/foundation.css?rel=38970">
-    <link rel="stylesheet" href="assets/css/app.css?rel=38970"><!--[if lt IE 10]>    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-    <style>@font-face
-{
-    font-family: 'Lato';
-    font-weight: 400;
-    font-style: normal;
-
-    font-display: swap;
-    src: url('assets/fonts/lato/regular/Lato-Regular.eot');
-    src: url('assets/fonts/lato/regular/Lato-Regular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/regular/Lato-Regular.woff') format('woff'), url('assets/fonts/lato/regular/Lato-Regular.ttf') format('truetype'), url('assets/fonts/lato/regular/Lato-Regular.svg#Lato') format('svg');
-}
-
-@font-face
-{
-    font-family: 'Lato';
-    font-weight: 700;
-    font-style: normal;
-
-    font-display: swap;
-    src: url('assets/fonts/lato/bold/Lato-Bold.eot');
-    src: url('assets/fonts/lato/bold/Lato-Bold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/bold/Lato-Bold.woff') format('woff'), url('assets/fonts/lato/bold/Lato-Bold.ttf') format('truetype'), url('assets/fonts/lato/bold/Lato-Bold.svg#Lato') format('svg');
-}
-
-@font-face
-{
-    font-family: 'Lato';
-    font-weight: 900;
-    font-style: normal;
-
-    font-display: swap;
-    src: url('assets/fonts/lato/black/Lato-Black.eot');
-    src: url('assets/fonts/lato/black/Lato-Black.eot?#iefix') format('embedded-opentype'), url('assets/fonts/lato/black/Lato-Black.woff') format('woff'), url('assets/fonts/lato/black/Lato-Black.ttf') format('truetype'), url('assets/fonts/lato/black/Lato-Black.svg#Lato') format('svg');
-}
-
-    </style>
-  </head>
-  <body>
-    <div id="preloader" data-controller="preloader">
-      <div class="preloader-wrapper">
-        <div class="preloader-center">
-          <div class="tcon-loader--spinner360" aria-label="loading">
-            <div class="tcon-visuallyhidden"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<?php require_once 'templates/header.php'?>
     <style>
       .temprow {
         padding: 0 0 30px 0;
@@ -238,7 +176,4 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/foundation.js?rel=38970" defer></script>
-    <script src="assets/js/app.js?rel=38970" defer></script>
-  </body>
-</html>
+<?php require_once 'templates/footer.php'?>
