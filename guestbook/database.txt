@@ -1,0 +1,1 @@
+Name: Bogdan|Message: Message|Date: 2021-09-02|Time: 12:45:10\nName: Vova|Message: Send|Date: 2021-09-02|Time: 12:45:19\nName: Vova|Message: <script>alert('hello')</script>|Date: 2021-09-02|Time: 14:10:04\n

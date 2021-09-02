@@ -35,7 +35,7 @@
       <span>Запонить меня</span>
     </label>
     <div>
-      <select name="lang[]">
+      <select name="lang">
         <option value="eng">English</option>
         <option value="ru">Russian</option>
         <option value="ua">Ukrain</option>
