@@ -1,10 +1,11 @@
 <?php
 
 
-class Product
+abstract class Product
 {
-    public $name;
-    public $price;
+    private $name;
+    protected $price;
+    private $discount = 0;
 
     public function __construct($name, $price)
     {
@@ -12,10 +13,10 @@ class Product
         $this->price = $price;
     }
 
-    public function getProduct() {
+    protected function getProduct() {
         return "<hr><b>О товаре:</b><br>
             Наименование: {$this->name}<br>
-            Цена: {$this->price}<br>";
+            Цена со скидкой: {$this->getPrice()}<br>";
     }
 
     public function getName()
@@ -23,8 +24,18 @@ class Product
         return $this->name;
     }
 
-    public function getPrice()
+    private function getPrice()
     {
-        return $this->price;
+        return $this->price - ($this->discount / 100 * $this->price);
+    }
+
+    private function getDiscount(): int
+    {
+        return $this->discount;
+    }
+
+    protected function setDiscount(int $discount)
+    {
+        $this->discount = $discount;
     }
 }

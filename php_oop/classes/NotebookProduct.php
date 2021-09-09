@@ -1,7 +1,7 @@
 <?php
+require_once 'classes/IGadget.php';
 
-
-class NotebookProduct extends Product
+class NotebookProduct extends Product implements IGadget
 {
     public $cpu;
 
@@ -9,6 +9,11 @@ class NotebookProduct extends Product
     {
         parent::__construct($name, $price);
         $this->cpu = $cpu;
+    }
+
+    public function getCase()
+    {
+        // TODO: Implement getCase() method.
     }
 
     public function getProduct()
