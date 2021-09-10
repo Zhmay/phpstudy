@@ -3,9 +3,11 @@
 namespace classes;
 
 use interfaces\IGadget;
+use traits\TColor;
 
 class NotebookProduct extends Product implements IGadget
 {
+    use TColor;
     public $cpu;
 
     public function __construct($name, $price, $cpu)

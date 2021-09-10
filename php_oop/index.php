@@ -69,11 +69,12 @@ require_once __DIR__ . '/vendor/autoload.php';
 function offerCase(IGadget $product) {
     echo "<p>Предлагаем чехол для гаджета {$product->getName()}</p>";
 }
-
+$book = new BookProduct("Война и мир", 300, 3000);
 $notebook = new NotebookProduct('Mac mini', 25000, 'iMac');
 offerCase($notebook);
-
-echo $notebook->getProduct();
+debug($book);
+debug($notebook);
+//echo $notebook->getProduct();
 
 
 

@@ -3,7 +3,8 @@
   "autoload": {
     "psr-4": {
       "classes\\": "classes",
-      "interfaces\\": "interfaces"
+      "interfaces\\": "interfaces",
+      "traits\\": "traits"
     }
   }
 }
