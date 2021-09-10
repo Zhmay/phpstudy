@@ -1,10 +1,15 @@
 <?php
 
-require_once 'classes/Car.php';
-require_once 'classes/File.php';
-require_once 'classes/Product.php';
-require_once 'classes/NotebookProduct.php';
-require_once 'classes/BookProduct.php';
+use interfaces\IGadget;
+use classes\{NotebookProduct, BookProduct};
+
+//require_once 'classes/Car.php';
+//require_once 'classes/File.php';
+//require_once 'classes/Product.php';
+//require_once 'classes/NotebookProduct.php';
+//require_once 'classes/BookProduct.php';
+
+
 
 
 function debug($data) {
@@ -45,6 +50,20 @@ function debug($data) {
 //echo $notebook->getProduct();
 
 
+//---------------- Автозагрузка и пространства имен ------------------
+
+//function autoloaderClass($class) {
+//    $class = str_replace("\\", "/", $class);
+//    $file = __DIR__ . "/{$class}.php";
+//    if(file_exists($file)) {
+//        require_once $file;
+//    }
+//}
+//
+//spl_autoload_register('autoloaderClass');
+
+require_once __DIR__ . '/vendor/autoload.php';
+
 //------------------ Интерфейсы и контроль типов ---------------------
 
 function offerCase(IGadget $product) {
@@ -55,3 +74,6 @@ $notebook = new NotebookProduct('Mac mini', 25000, 'iMac');
 offerCase($notebook);
 
 echo $notebook->getProduct();
+
+
+

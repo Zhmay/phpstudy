@@ -1,1 +1,5 @@
 .DS_Store
+/php_oop/vendor
+
+/php_oop/composer
+/php_oop/composer.lock

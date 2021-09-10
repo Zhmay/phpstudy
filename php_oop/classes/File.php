@@ -1,4 +1,7 @@
 <?php
+
+namespace classes;
+
     class File {
         public $file = 'text.txt';
         public $handle;

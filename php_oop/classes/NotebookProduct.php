@@ -1,5 +1,8 @@
 <?php
-require_once 'classes/IGadget.php';
+
+namespace classes;
+
+use interfaces\IGadget;
 
 class NotebookProduct extends Product implements IGadget
 {

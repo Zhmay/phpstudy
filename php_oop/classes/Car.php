@@ -1,5 +1,7 @@
 <?php
 
+namespace classes;
+
     class Car {
         public $brand;
         public $color;
